@@ -35,12 +35,12 @@ def plot_data(cities, client):
         plt.ylabel("Temperature (C)", fontsize=12)
         sns.lineplot(x=date_times, y=temperatures[city], zorder=2)
         plt.savefig(
-            "D:/Coursework/FA22 DATABASE SYSTEMS 29229/Project/realtime-weather-changes/PlotMap/" + city + ".png",
+            "D:/realtime-weather-changes-main/PlotMap/" + city + ".png",
             bbox_inches='tight')
         plt.close()
 
         im = Image.open(
-            "D:/Coursework/FA22 DATABASE SYSTEMS 29229/Project/realtime-weather-changes/PlotMap/" + city + ".png")
+            "D:/realtime-weather-changes-main/PlotMap/" + city + ".png")
         im.show()
 
         ct = datetime.now()
