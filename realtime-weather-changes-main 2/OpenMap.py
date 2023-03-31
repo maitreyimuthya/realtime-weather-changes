@@ -63,10 +63,10 @@ def latest_weather_map(locations, cities, db):
                 ''' % (icon_url, weather)
         maps.get_root().html.add_child(folium.Element(legend_html))
         maps.save(
-            "D:/Coursework/FA22 DATABASE SYSTEMS 29229/Project/realtime-weather-changes/OpenMap/" + city + "_" + last_timestamp_date.replace(
+            "D:/realtime-weather-changes-main/OpenMap/" + city + "_" + last_timestamp_date.replace(
                 ":", "_") + "_latest_weather.html")
 
-        webbrowser.open("file://D:/Coursework/FA22 DATABASE SYSTEMS 29229/Project/realtime-weather-changes/OpenMap/" + city + "_" + last_timestamp_date.replace(
+        webbrowser.open("file://D:/realtime-weather-changes-main/OpenMap/" + city + "_" + last_timestamp_date.replace(
                 ":", "_") + "_latest_weather.html")
         ct = datetime.now()
         print("Latest Map downloaded on", ct)
