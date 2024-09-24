@@ -1,6 +1,6 @@
 # Recording real time weather changes using MongoDB and OpenWeather API.
 # Team Members: 
-Shirish Nair, Maitreyi Muthya.
+Maitreyi Muthya.
 # Aim/Purpose: 
 To generate warnings using database triggers during extreme weather conditions.
 # Approach: 
